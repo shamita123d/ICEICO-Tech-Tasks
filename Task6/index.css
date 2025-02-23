@@ -1,0 +1,95 @@
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Smooch Sans', sans-serif;
+            color: rgb(118, 113, 113);
+            background-color: #c0bbbb;
+            padding: 15px;
+        }
+        
+        .main {
+            width: 100%;
+            background-color: #fefefe;
+            padding-bottom: 20px;
+        }
+        
+        .header {
+            width: 100%;
+            background: url('./header.jpg') no-repeat bottom;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(95, 92, 92);
+            padding: 10px;
+            padding-bottom: 158px;
+        }
+        
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        
+        .left {
+            width: 20%;
+            padding: 10px;
+        }
+        
+        .left ul {
+            list-style-type: none;
+        }
+        
+        .left ul li {
+            margin: 10px 0;
+        }
+        
+        .left ul li a {
+            text-decoration: none;
+            color: #0066cc;
+            font-size: 25px;
+            font-weight:lighter;
+        }
+        
+        .right {
+            width: 75%;
+            margin-left: 20px;
+            border-left: 1px solid rgb(63, 62, 62);
+            padding: 15px;
+        }
+        
+        .box {
+            background: white;
+          
+            margin-bottom: 20px;
+            border: 1px solid #696565;
+        }
+        
+        .title {
+            background: #5a7800;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        
+        .footer {
+            width: 100%;
+            text-align: end;
+            padding: 10px 15px;
+            color: grey;
+            border-top: 1px solid rgb(74, 72, 72);
+               
+        }
+.box.p{
+    padding-left: 15px;
+}
+        .container.left.ul.li.p{
+            color: gray;
+
+        }
