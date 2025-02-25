@@ -1,0 +1,189 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 50px 5%;
+  height: 100vh; 
+}
+
+
+#left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  background: #fff;
+}
+
+#left h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+#left p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+button {
+  border:1px solid #2c2b2b;
+  color: #060606;
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 15px 25px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #555;
+}
+
+#right {
+  width: 60%;
+  background: url("./img1.jpeg") no-repeat center center/cover;
+}
+
+.work {
+  width: 100%;
+  padding: 50px 5%;
+  text-align: center;
+  background: #eee;
+}
+
+#headw {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: #222;
+  color: #fff;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.work .w1,
+.work .w2,
+.work .w3,
+.work .w4,
+.work .w5{
+  object-fit: cover;
+   display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-left: 20px auto;
+  margin-bottom: 25px;
+  max-width: 800px;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo {
+  padding: 20px;
+}
+
+.photo h3 {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.photo p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+#entit {
+  /* width: 100%; */
+  /* background: #222; */
+  color: #211f1f;
+  padding: 50px;
+  text-align: center;
+}
+
+.entit h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.entit p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  color: #ddd;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #left, #right {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .work .w1,
+  .work .w2,
+  .work .w3,
+  .work .w4 {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #left h1 {
+    font-size: 2rem;
+  }
+
+  #left p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .work .w1,
+  .work .w2,
+  .work .w3,
+  .work .w4 {
+    max-width: 100%;
+  }
+
+  .entit h1 {
+    font-size: 1.8rem;
+  }
+
+  .entit p {
+    font-size: 1rem;
+  }
+}
