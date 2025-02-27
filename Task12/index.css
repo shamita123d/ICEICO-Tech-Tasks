@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: #fff;
+}
+
+h1{
+    padding: 20px;
+}
+.parallax {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(252, 251, 251);
+    font-weight: 300;
+    text-align: center;
+}
+
+#section1 {
+    background-image: url('pic3.jpg'); 
+}
+
+#section2 {
+    background-image: url('pic1.jpg');
+}
+
+#section3 {
+    background-image: url('pic2.jpg');
+}
+
+.content {
+    background-image: url(./pic3.jpg);
+    padding: 20px;
+    border-radius: 10px;
+    width: 180%;
+    height: 80%;
+    max-width:1000px;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content1 {
+    background-image: url(./pic1.jpg);
+    padding: 20px;
+    border-radius: 10px;
+    width: 180%;
+    height: 80%;
+    max-width:1000px;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content2 {
+    background-image: url(./pic2.jpg);
+    padding: 20px;
+    border-radius: 10px;
+    width: 180%;
+    height: 80%;
+    max-width:1000px;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text-section {
+    padding: 50px;
+    /* text-align: center; */
+    background: #f4f4f4;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .parallax {
+        height: 60vh;
+        background-attachment: scroll;
+    }
+    
+    .content {
+        width: 90%;
+    }
+}
